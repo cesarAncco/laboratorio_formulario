@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
   </head>
   <body>
-    
+    <!-- Formulario -->
+    <!-- Un formulario basico para poder ingresar datos de una persona para registrarse en un pagina web -->
+    <form action="/resgistro_datos" method="post" target="_blank">
+      <table width="100%">
+        <tr>
+          <th colspan="4">Datos Personales</th>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td width="20%"><label for="nombre">Nombres</label></td>
+          <td width="20%"><input type="text" name="nombre" id="nombre" placeholder="Ingrese los Nombres"></td>
+          <td width="30%"></td>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td width="20%"><label for="apellidos">Apellidos</label></td>
+          <td width="20%"><input type="text" name="apellidos" id="apellidos" placeholder="Ingrese los Apellidos"></td>
+          <td width="30%"></td>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td width="20%"><label for="nacimiento">Fecha de Nacimiento</label></td>
+          <td width="20%"><input type="date" name="nacimiento" id="nacimiento"></td>
+          <td width="30%"></td>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td width="20%"><label for="celular">Celular</label></td>
+          <td width="20%"><input type="number" name="celular" id="celular"></td>
+          <td width="30%"></td>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td width="20%"><label for="correo">Correo Electronico</label></td>
+          <td width="20%"><input type="email" name="correo" id="correo" placeholder="Ingrese un Correo"></td>
+          <td width="30%"></td>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td width="20%"><label for="direccion">Dirección</label></td>
+          <td width="20%"><input type="text" name="direccion" id="direccion" placeholder="Ingrese la Dirección"></td>
+          <td width="30%"></td>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td width="20%"><label for="genero">Genero</label></td>
+          <td width="20%">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="genero" id="hombre">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="genero" id="mujer">
+          </td>
+          <td width="30%"></td>
+          <tr>
+            <td width="30%"></td>
+            <td width="20%"><label for="direccion">Idioma</label></td>
+            <td width="20%"><select name="idiomas" id="idiomas" name="idiomas">
+              <option value="español">Español</option>
+              <option value="ingles">Ingles</option>
+              <option value="frances">Frances</option>
+            </select></td>
+            <td width="30%"></td>
+          </tr>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td width="20%"><label for="comentario">Comentarios</label></td>
+          <td width="20%"><textarea name="comentario" id="comentario" cols="30" rows="5"></textarea></td>
+          <td width="30%"></td>
+        </tr>
+        <tr>
+          <td width="30%"></td>
+          <td colspan="2" width="40%" style="text-align: center;"><input type="submit" value="Enviar"></td>
+          <td width="30%"></td>
+        </tr>
+
+      </table>
+    </form>
   </body>
 </html>
